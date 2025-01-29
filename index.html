@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Contract Mini-DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Task Contract Mini-DApp</h1>
+
+        <div>
+            <h3>Add a Task</h3>
+            <label for="taskTitle">Mini Dapp</label>
+            <input type="text" id="taskTitle" placeholder="Task Title">
+            <label for="taskText">Task Text:</label>
+            <input type="text" id="taskText" placeholder="Task Description">
+            <label for="isDeleted">Is Deleted:</label>
+            <input type="checkbox" id="isDeleted">
+            <button id="addTaskButton">Add Task</button>
+        </div>
+
+        <div>
+            <h3>My Tasks</h3>
+            <button id="getTasksButton">Get My Tasks</button>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
